@@ -22,7 +22,7 @@ package heigit.ors.routing;
 
 import heigit.ors.routing.RoutingProfileManager;
 
-public class GraphBuilder {
+public class GraphBuilder{
 	public static void main(String[] args) {
 
 		if (args.length >= 1)

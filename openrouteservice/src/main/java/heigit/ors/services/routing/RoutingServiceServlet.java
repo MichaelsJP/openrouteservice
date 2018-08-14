@@ -27,7 +27,12 @@ import javax.servlet.http.HttpServletResponse;
 import heigit.ors.services.routing.requestprocessors.RoutingServiceRequestProcessorFactory;
 import heigit.ors.servlet.http.AbstractHttpRequestProcessor;
 import heigit.ors.servlet.http.BaseHttpServlet;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
+@RestController
+@RequestMapping("/directions")
 public class RoutingServiceServlet extends BaseHttpServlet {
 	/** Serial Version UID */
 	private static final long serialVersionUID = 1L;
@@ -51,6 +56,7 @@ public class RoutingServiceServlet extends BaseHttpServlet {
 		}
 	}
 
+	@GetMapping
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException {
 		try
 		{
