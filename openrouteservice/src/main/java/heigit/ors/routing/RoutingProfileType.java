@@ -78,6 +78,13 @@ public class RoutingProfileType {
 			return false;
 	}
 
+	public static boolean isWheelchair(int routePref) {
+		if (routePref == WHEELCHAIR)
+			return true;
+		else
+			return false;
+	}
+
 	public static boolean supportMessages(int profileType)
 	{
 		return isDriving(profileType);
